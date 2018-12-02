@@ -32,6 +32,7 @@ type EvalResponse struct {
 
 func luaHandler() iris.Handler {
 	return func(ctx iris.Context) {
+		
 		//run lua vm
 		L := lua.NewState()
 		defer L.Close()
